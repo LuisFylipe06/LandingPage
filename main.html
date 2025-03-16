@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transitionHeader.js">
+    <link rel="stylesheet" href="style.css">
+    <title>LVR Tour - Explore o Mundo</title>
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a class="header-logo">
+            <div>
+                <img src="./Img/logo.png" alt="logo">
+            </div>
+        </a>
+
+        <div class="search-bar">
+            <div class="search-item">
+                <i>🛫</i>
+                <input type="text" placeholder="Para onde ?">
+            </div>
+
+            <div class="search-item">
+                <i>📅</i>
+                <input type="date" placeholder="Data">
+            </div>
+
+            <div class="search-item">
+                <i>📅</i>
+                <input type="date" placeholder="Data">
+            </div>
+
+            <div class="search-item">
+                <i>👥</i>
+                <span id="guestText">2 hóspedes, 1 quarto</span>
+                <div class="guestDropdown" id="guestDropdown">
+                    <div onclick="setGuests(1)">1 hóspede, 1 quarto</div>
+                    <div onclick="setGuests(2)">2 hóspedes, 1 quarto</div>
+                    <div onclick="setGuests(3)">3 hóspedes, 1 quarto</div>
+                    <div onclick="setGuests(4)">4 hóspedes, 1 quarto</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="menu">
+            <div class="menu-container">
+                <span class="menu-icon">☰</span>
+                <div class="dropdown">
+                    <a href="#">Login</a>
+                    <a href="#">Criar Conta</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="person">
+        <div class="person-content">
+            <div class="person-image">
+                <img src="./Img/Imagem Fernando.jpg" alt="img FN">
+            </div>
+        </div>
+
+        <div class="box-about">
+            <div class="section-subtitle">
+                <h2>
+                    <p>&#x1F1E7;&#x1F1F7;</p>
+                    <p><span>Destinos</span> Nacionais</p>
+                </h2>
+            </div>
+            <h3>
+                Sou um Desenvolvedor Front-End com experiências em
+                <p>HTML, CSS, JavaScript, React e Node.Js</p>
+            </h3>
+
+            <h4>
+                Sou estudante do curso de Análise e Desenvolvimento de Sistemas pelo Centro Universitário de
+                Brasília (UniCEUB). Tenho um perfil organizado, focado e disciplinado, além de possuir habilidades
+                em resolução de problemas e capacidade de aprendizado rápido. Atualmente sou estagiario no Tribunal de
+                Contas da União-TCU atuando na area de desenvolvimento de soluções e suporte de sistemas corporativos.
+                Busco oportunidades para
+                aprimorar minhas habilidades e contribuir de forma significativa para as atividades da organização.
+            </h4>
+
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="box-about">
+            <div class="section-subtitle">
+                <h2>
+                    <p>🌍</p>
+                    <p><span>Destinos</span> Internacionais</p>
+                </h2>
+            </div>
+            <h3>
+                Sou um Desenvolvedor Front-End com experiências em
+                <p>HTML, CSS, JavaScript, React e Node.Js</p>
+            </h3>
+
+            <h4>
+                Sou estudante do curso de Análise e Desenvolvimento de Sistemas pelo Centro Universitário de
+                Brasília (UniCEUB). Tenho um perfil organizado, focado e disciplinado, além de possuir habilidades
+                em resolução de problemas e capacidade de aprendizado rápido. Atualmente sou estagiario no Tribunal de
+                Contas da União-TCU atuando na area de desenvolvimento de soluções e suporte de sistemas corporativos.
+                Busco oportunidades para
+                aprimorar minhas habilidades e contribuir de forma significativa para as atividades da organização.
+            </h4>
+
+        </div>
+        <div class="background-about">
+            <div class="img-wrapper">
+                <img src="./Img/Imagem TS.jpg" alt="img2-notebook">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="projects">
+        <div class="projects-title">
+            <h2>PRINCIPAIS DESTINOS INTERNACIONAIS</h2>
+        </div>
+
+        <div class="container-project">
+            <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true"
+                slides-per-view="3" navigation="nextEl: .swiper-button-next prevEl: .swiper-button-prev">
+
+                <swiper-slide class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="./">
+                            <img src="./Img/paris image.jpg" alt="img-conversor">
+                        </a>
+                    </div>
+                    <span>Paris-França</span>
+                    <p>Deslumbre cidade luz! Passeie pela Torre Eiffel, saboreie croissants incríveis e explore o
+                        Louvre.
+
+                    <h3>📍 Pacote completo: Passagens, hospedagem e passeios icônicos!</h3>
+                    </p>
+
+                    <div class="cta-project">
+                        <a href="/">
+                            Saiba mais
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="./">
+                            <img src="./Img/toquio image.jpg" alt="img-conversor">
+                        </a>
+                    </div>
+                    <span>Toquio-Japão</span>
+                    <p>Deslumbre-se com os templos históricos, as luzes de Shibuya e a culinária irresistível. Uma
+                        mistura perfeita de tradição e modernidade te espera!</p>
+
+                    <h3>📍 Pacote completo: Passagens, hospedagem e passeios inesquecíveis!</h3>
+
+                    <div class="cta-project">
+                        <a href="/">
+                            Saiba mais
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="./">
+                            <img src="./Img/paris image.jpg" alt="img-conversor">
+                        </a>
+                    </div>
+                    <span>Projeto a ser definido</span>
+                    <p>Projeto em desenvolvimento</p>
+
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="./">
+                            <img src="./Img/Roma image.jpg" alt="img-conversor">
+                        </a>
+                    </div>
+                    <span>Projeto a ser definido</span>
+                    <p>Projeto em desenvolvimento</p>
+
+                    <div class="cta-project">
+                        <a href="/">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </swiper-slide>
+
+            </swiper-container>
+        </div>
+    </section>
+
+
+    <section id="contacts">
+
+        <div class="contact-icon-content">
+            <h2>Contato 📞</h2>
+        </div>
+
+        <div class="contact-icons-wrapper">
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+
+                <div class="contact-info">
+                    <span>Localização</span>
+                    <p>Brasilia, Brasil</p>
+                </div>
+            </div>
+
+            <div class="contact-icon-content"></div>
+            <div class="contact-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+
+            <div class="contact-info">
+                <span>E-mail</span>
+                <a href="mailto:luisfylipedesousa@gmail.com">
+                    luisfylipedesousa@gmail.com
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="transitionHeader.js"></script>
+
+</body>
+
+</html>
